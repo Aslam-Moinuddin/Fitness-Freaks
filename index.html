@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitnessFreaks</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="front.css">
+    <style>
+        #preloader{
+            background: linear-gradient(to bottom, #ffffff, #000000);
+            background-size: 100% 200%;
+            animation: bg-pan-bottom 4s both;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            z-index: 10000000;
+        }
+        .loader {
+            width: 8rem;
+            height: 8rem;
+            background: #000000 url(images/Fitness\ Freaks.gif) no-repeat center center;
+            background-color: white;
+            background-size: 80%;
+            border-radius: 2rem;
+            overflow: hidden;
+            box-shadow: 0 0 60px 0 rgba(21, 1, 208, 0.8),
+            
+            0 0 40px 10px rgba(34, 20, 245, 0.54),
+            inset 0 0 10px 0 #000000;
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div id="preloader">
+        <div id="container" class="loader"></div>
+    </div>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="img/Fitness_Freaks-removebg-preview (2).png" alt="Logo"></a>
+            </div>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#trainers">Trainers</a></li>
+                <li><a href="#prices">Prices</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="login-button">
+                <a href="next-page.html">Login</a>
+            </div>
+        </nav>
+        <div class="container">
+            <section id="about" class="about-section">
+                <div class="text">
+                    <p style="font-size: 48px; color: red;">About Us</p>
+                     <p style="font-size: 48px; color: rgb(240, 8, 8);">"Fitness On Fire"</p>
+                    <p style="font-size: 24px;">Empower Your Fitness Journey here. This is your one-stop shop for achieving your fitness goals! We offer a personalized and convenient experience to help you transform your health and well-being.</p>
+                </div>
+            </section>
+            <section id="features" class="features-section">
+                <div class="text">
+                    <p style="font-size: 48px; color: red;">Features</p>
+                    <p style="font-size: 24px;">Here you can highlight the features of your product or service.</p>
+                    <div class="box-container">
+                        <div class="box">
+                            <h3><i class="fas fa-check"></i> body and mind</h3>
+                        </div>
+                        <div class="box">
+                            <h3><i class="fas fa-check"></i> healthy life</h3>
+                        </div>
+                        <div class="box">
+                            <h3><i class="fas fa-check"></i> strategies</h3>
+                        </div>
+                        <div class="box">
+                            <h3><i class="fas fa-check"></i> workout</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="images/IMG1.jpg" alt="Features Image">
+                </div>
+            </section>
+            <!-- Trainers Section -->
+            <section class="trainers" id="trainers">
+                <h1 class="heading"> <span>Expert Trainers</span> </h1>
+                <div class="box-container">
+                    <div class="box">
+                        <img src="images/1.jpg" alt="">
+                        <div class="content">
+                            <span>Plus Ultra trainer</span>
+                            <h3>Dwayne Johnson</h3>
+                            <div class="share">
+                                <a href="#" class="fab fa-facebook-f"></a>
+                                <a href="#" class="fab fa-pinterest"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                    <img src="images/3.jpg" alt="">
+                    <div class="content">
+                        <span>Elite Trainer</span>
+                        <h3>Lisa</h3>
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-pinterest"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/2.jpg" alt="">
+                    <div class="content">
+                        <span>Pro Trainer</span>
+                        <h3>Tom Hardy</h3>
+                        <div class="share">
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-pinterest"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/trainer-2.jpg" alt="">
+                    <div class="content">
+                        <span>Rookie Trainer</span>
+                        <h3>Sasha</h3>
+                        <div class="share">
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Trainers Section -->
+        <section id="prices-container">
+            <section id="prices">
+                <h2>Prices</h2>
+                <div class="price-cards">
+                    <div class="price-card">
+                        <h3>Rookie Subscription</h3>
+                        <p>Get Access to Basic features</p>
+                        <p>Includes 1.5 months membership Access</p>
+                        <p>Rs.1600/month</p>
+                        <a href="next-page.html"><button>Subscribe</button></a>
+                    </div>
+                    <div class="price-card">
+                        <h3>Pro Subscription</h3>
+                        <p>Get Access to Pro features</p>
+                        <p>Includes 3 months membership Access</p>
+                        <p>Rs.4200/month</p>
+                        <a href="next-page.html"><button>Subscribe</button></a>
+                    </div>
+                    <div class="price-card">
+                        <h3>Elite Subscription</h3>
+                        <p>Get Access to Elite features</p>
+                        <p>Includes 6 months membership Access</p>
+                        <p>Rs.9000/month</p>
+                        <a href="next-page.html"><button>Subscribe</button></a>
+                    </div>
+                    <div class="price-card">
+                        <h3>Plus Ultra Subscription</h3>
+                        <p>Get Access to all features</p>
+                        <p>Includes yearly membership Access</p>
+                        <p>Rs.20000/month</p>
+                        <a href="next-page.html"><button>Subscribe</button></a>
+                    </div>
+                </div>
+            </section>
+        </section>
+        
+        <section id="contact">
+            <div class="contact-header">
+                <h2>Contact</h2>
+            </div>
+            <div class="container">
+                <div class="l_container">
+                    <form action="#">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required />
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required />
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required />
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="3" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="r_container">
+                    <!-- <p>Email Me :</p>
+                        <a href="mailto:aslammoinuddin4@example.com">aslammoinuddin4@example.com</a> -->
+                        <div class="social-media-links">
+                            <p>Social Media Links:</p>
+                            <a href="https://www.linkedin.com/in/aslam-moinuddin/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/aslam.4789/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://github.com/Aslam-Moinuddin" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script>
+            var loader = document.getElementById("preloader");
+            var nav = document.querySelector("nav");
+            
+            window.addEventListener("load", function() {
+                setTimeout(function() {
+                    loader.style.display = "none";
+                    nav.style.visibility = "visible"; // Show the navbar once preloader is hidden
+                    document.body.classList.remove("loading");
+                }, 2000);
+            });
+            document.body.classList.add("loading");
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
+                smoothScrollLinks.forEach(link => {
+                    link.addEventListener("click", function(event) {
+                        event.preventDefault();
+                        const targetId = this.getAttribute("href");
+                        const targetElement = document.querySelector(targetId);
+                        if (targetElement) {
+                            const targetOffset = targetElement.offsetTop;
+                            window.scrollTo({
+                                top: targetOffset,
+                                behavior: "smooth"
+                            });
+                        }
+                    });
+                });
+            });
+        </script>
+</body>
+</html>

@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+body, ul,html {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+body.loading {
+    overflow: hidden; /* Lock scroll bar */
+}
+
+/* Styling the navigation bar */
+nav {
+    background-color: #333;
+    padding: 20px 0; /* Increased padding for taller navigation bar */
+    position: fixed;
+    visibility: hidden;
+    width: 100%;
+    top: 0;
+    z-index: 1000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    flex-grow: 1;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: red; /* Scarlet color for links */
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+nav ul li a:hover {
+    background-color: #555;
+}
+/* Styling the content */
+.container {
+    width: 100%; /* Adjusted width to cover the entire screen */
+    padding-top: 0; /* Removed padding to eliminate gap */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    text-align: center;
+    color: #eee;
+    margin-top: 60px; /* Added margin to move content below the fixed navbar */
+}
+h1, h2, h3, h4, h5, h6 {
+    color: red; /* Scarlet color for main headings */
+}
+p {
+    color: #ccc;
+}
+section {
+    margin-bottom: 200px; /* Adjusting bottom margin to accommodate fixed nav */
+}
+#contact{
+    margin-bottom: 20px;
+}
+/* Styling the logo */
+.logo img {
+    width: 70px; /* Adjust as needed */
+    height: 70px; /* Maintain aspect ratio */
+    margin-left: 40px; /* Add spacing between logo and nav links */
+}
+/* Styling the login button */
+.login-button {
+    margin-right: 20px;
+}
+.login-button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: red; /* Scarlet color for buttons */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.login-button a:hover {
+    background-color: red; /* Lighter scarlet color on hover */
+}
+/* Styling the about section */
+.about-section{
+    background-image: url('images/home-bg-3.jpg'); /* Background image for the section */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    padding: 40px; /* Add padding to the section */
+    color: #fff; /* Text color for the section */
+    height: 100vh; /* Set height to cover the entire viewport */
+    display: flex; /* Flex display for flex items alignment */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    text-align: left; /* Align text to left */
+}
+.about-section .text{
+    max-width: 50%;
+    transform: translate(-40%,-40%);
+    /* font-size: 24px; */
+}
+.about-section .text p{
+    font-size: 24px;
+}
+.features-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+.features-section .text {
+    flex: 1;
+    margin-right: 20px; /* Add spacing between text and image */
+    font-size: 20px;
+}
+.features-section .image {
+    flex: 1;
+    text-align: right;
+}
+.features-section img {
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+}
+/* Styling the trainers section */
+.trainers {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); /* Darker background color */
+    padding: 80px 0;
+    color: #fff; /* Light text color */
+}
+.trainers .heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.trainers .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.trainers .box {
+    flex: 1;
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #333; /* Darker background color for boxes */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Lighter shadow */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease; /* Transition for smooth effect */
+}
+.trainers .box:hover{
+    box-shadow: 0 0 20px rgb(255, 0, 0); /* Red glow on hover */
+}
+.trainers .box img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+.trainers .box:hover img {
+    transform: scale(1.1);
+}
+.trainers .box .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    color: #fff;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+.trainers .box:hover .content {
+    transform: translateY(0);
+}
+.trainers .box .content span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #aaa;
+}
+.trainers .box .content h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.trainers .box .content .share {
+    margin-top: 20px;
+}
+.trainers .box .content .share a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #555;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+.trainers .box .content .share a:hover {
+    background-color: #777;
+}
+#prices {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),  url('images/IMG6.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* This ensures the section takes up the entire viewport height */
+}
+#prices h2 {
+    margin-bottom: 40px; /* Add margin below the heading */
+    font-size: 36px;
+}   
+.price-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.price-card {
+    width: 200px;
+    padding: 20px;
+    background-color: #555;
+    text-align: center;
+    /* transform: translateY(60%); */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+.price-card:hover {
+    transform: scale(1.1); /* Scale up the card on hover */
+    box-shadow: 0 0 20px rgb(255, 0, 0); /* Add red glow on hover */
+}
+.price-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.price-card p {
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.price-card button {
+    padding: 10px 20px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.price-card button:hover {
+    background-color: #ff3333;
+}
+
+#contact h2{
+    font-size: 36px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    /* position: fixed; */
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+}
+
+
+#contact {
+    background-color: #333;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),  url('images/equipment1.jpg');
+}
+
+#contact .contact-header h2 {
+    color: red;
+    margin-bottom: 20px;
+}
+
+#contact .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#contact .l_container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+#contact .r_container {
+    flex: 1;
+    margin-left: 20px;
+}
+
+
+#contact form {
+    max-width: 400px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#contact form h2 {
+    text-align: center;
+}
+
+#contact form label {
+    display: block;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact form textarea {
+    height: 100px;
+}
+
+#contact button[type="submit"] {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+#contact button[type="submit"]:hover {
+    background-color: #ff3333;
+}
+
+#contact .r_container p,
+#contact .social-media-links p {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#contact .social-media-links a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+#contact .social-media-links a:hover {
+    color: red;
+}

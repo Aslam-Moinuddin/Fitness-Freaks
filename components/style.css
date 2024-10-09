@@ -1,0 +1,65 @@
+/* Styles for form container */
+/* Styles for form container */
+img{
+    border-radius: 10px;
+}
+.form-container {
+    width: 80%;
+    height: 600px; /* Adjust the height as needed */
+    margin: 20px     auto; /* Center the form horizontally */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    /* background: url(images/IMG1.jpg); */
+    overflow: auto; /* Add overflow to enable scrolling if content exceeds the height */
+}
+
+/* Styles for form elements */
+.form-row {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.form-group {
+    flex: 0 0 50%; /* Two columns on medium and larger screens */
+    padding: 0 10px;
+}
+
+.form-group.full-width {
+    flex: 0 0 100%; /* Full width on smaller screens */
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+label {
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+

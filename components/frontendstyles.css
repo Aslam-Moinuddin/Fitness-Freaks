@@ -1,0 +1,323 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background: rgb(0,255,235);
+    background: linear-gradient(164deg, rgba(0,255,235,1) 0%, rgba(5,181,241,1) 15%, rgba(11,84,249,1) 15%, rgba(7,0,154,1) 18%, rgba(7,0,154,1) 82%, rgba(11,84,249,1) 85%, rgba(5,181,241,1) 85%, rgba(0,255,235,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#preloader{
+    background: linear-gradient(to bottom, #ffffff, #000000);
+    background-size: 100% 200%;
+    animation: bg-pan-bottom 4s both;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+@keyframes bg-pan-bottom {
+    0% {
+        background-position: 50% 0%;
+    }
+    100% {
+        background-position: 50% 100%;
+    }
+}
+.box {
+    width: 8rem;
+    height: 8rem;
+    background: #000000 url(images/ezgif.com-animated-gif-maker.gif) no-repeat center center;
+    background-color: white;
+    background-size: 80%;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0 0 60px 0 rgba(21, 1, 208, 0.8),
+                
+                0 0 40px 10px rgba(34, 20, 245, 0.54),
+                inset 0 0 10px 0 #000000;
+    transition: transform 0.3s ease-in-out;
+}
+/* .box:hover{
+    transform: scale(1.1);
+} */
+/* #gifImg {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+} */
+/* #gifImg:hover {
+    transform: scale(1.1);
+} */
+
+
+
+.section1{
+    width: 100%;
+    display: inline-flex;
+}
+.section1 .left{
+    width: 50%;
+}
+.section1 .left .before{
+    /* width: 50%; */
+    width: 40%;
+    height: 200px;
+    transform: translateX(60%);
+    background-color: red;
+}
+nav {
+    width: 100%;
+    height: 100%; /* Update this line to take the full height of the body */
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation{
+    width: 100%;
+    height: 200px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+/* logo */
+.logo_container a{
+    /* color: rgb(252, 136, 59); */
+    /* font-family: 'Splash',cursive; */
+    /* font-weight: 400; */
+    /* font-size: 60px; */
+    background-color: transparent;
+}
+.navigation .logo{
+    width: auto;
+    height: 100px;
+}
+.navigation .logo img{
+    width: auto;
+    height: 200px;
+    transform: translateY(-10%);
+}
+
+/* menu */
+.menu_container{
+    background-color: transparent;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* color: white; */
+    align-items: center;
+    margin-left: 110px;
+}
+.menu a{
+    text-decoration: none;
+    background-color: transparent;
+    justify-content: center;
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+
+}
+.menu .fitness_container{
+    /* width: 110px; */
+    /* height: 50px; */
+    /* justify-content: center; */
+    /* text-align: center; */
+
+    display: flex;
+    height: 50px;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 150ms ease;
+    opacity: 70%;
+}
+.menu .fitness_container .fitness{
+    height: 100%;
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: bold;
+    color: white;
+}
+.menu .sports_container{
+    /* width: 110px; */
+    /* height: 50px; */
+    /* justify-content: center; */
+    /* text-align: center; */
+
+    display: flex;
+    height: 50px;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 150ms ease;
+    opacity: 70%;
+}
+.menu .sports_container .sports{
+    height: 100%;
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: bold;
+    color: white;
+}
+.menu .care_container{
+    /* width: 110px; */
+    /* height: 50px; */
+    /* justify-content: center; */
+    /* text-align: center; */
+
+    display: flex;
+    height: 50px;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 150ms ease;
+    opacity: 70%;
+}
+.menu .care_container .care{
+    height: 100%;
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: bold;
+    color: white;
+}
+.menu .store_container{
+    /* width: 110px; */
+    /* height: 50px; */
+    /* justify-content: center; */
+    /* text-align: center; */
+
+    display: flex;
+    height: 50px;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 150ms ease;
+    opacity: 70%;
+}
+.menu .store_container .store{
+    height: 100%;
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: bold;
+    color: white;
+}
+
+/* features container */
+.features_container{
+    background-color: transparent;
+}
+.features{  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* color: white; */
+    align-items: center;
+    margin-left: 110px;
+    height: 100px;
+}
+.features .location_container{
+    display: flex;
+    height: 50px;
+    padding: 0 15px ;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 150ms ease;
+    opacity: 70%;
+}
+.features .location{
+    height: 100%;
+    display: flex; /* because we are taking 2 sections in location*/
+    align-items: center;
+    /* font-size: 20px;
+    font-family: cursive;
+    font-weight: bold; */
+    /* color: white; */
+}
+.features .location_name{
+    height: 100%;
+    display: flex;
+    padding: 0 15px;
+    align-items: center;
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: bold;
+    color: white;
+    /* background-color: rgb(97, 82, 82); */
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.features .location_area{
+    height: 100%;
+    padding: 0 15px;
+    /* background-color: rgb(97, 82, 82); */
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.features .location_area ion-icon{
+    color: white;
+    font-size: 30px;
+    padding-top: 10px;
+}
+.features .location:hover{
+    background-color: rgb(97, 82, 82);
+    border-radius: 10px;
+}
+.features .login_container{
+    display: flex;
+    height: 50px;
+    padding: 0 15px ;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 150ms ease;
+    opacity: 70%;
+}
+.features .login{
+    height: 100%;
+}
+.features .login ion-icon{
+    font-size: 30px;
+    padding-top: 10px;
+}
+.features .login_container:hover{
+    background-color: rgb(97, 82, 82);
+    border-radius: 50%;
+}
+.features .cart_container{
+    display: flex;
+    height: 50px;
+    padding: 0 15px ;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 150ms ease;
+    opacity: 70%;
+}
+.features .cart{
+    height: 100%;
+}
+.features .cart ion-icon{
+    font-size: 30px;
+    padding-top: 10px;
+}
+.features .cart_container:hover{
+    background-color: rgb(97, 82, 82);
+    border-radius: 50%;
+}
